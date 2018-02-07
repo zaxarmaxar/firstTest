@@ -139,7 +139,7 @@ public class FunctionalTests extends TestovoeZadanieTest {
         String resultB = triangleFormPage.validationB();
         String resultC = triangleFormPage.validationC();
         softAssert.assertEquals(resultA, "'100qwe'" + "не является допустимым числом");
-        softAssert.assertEquals(resultB, "'qwe'" + "не является допустимым числом");
+        softAssert.assertEquals(resultB, "'100qwe'" + "не является допустимым числом");
         softAssert.assertEquals(resultC, "'100qwe'" + "не является допустимым числом");
         softAssert.assertAll();
     }
